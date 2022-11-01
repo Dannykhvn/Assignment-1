@@ -1,3 +1,23 @@
+
+body{
+}
+main{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+}
+aside{
+    background-color:antiquewhite;
+    height:100%;
+
+}
+.better{
+    background-color:tan;
+    height:100%;
+   
+}
 li{
     list-style:square;
+}
+h1{
+    text-align:center;
 }
