@@ -1,6 +1,4 @@
 
-body{
-}
 main{
     display:grid;
     grid-template-columns: 1fr 4fr;
@@ -13,10 +11,12 @@ aside{
 .better{
     background-color:tan;
     height:100%;
-   
 }
-li{
+.l1{
     list-style:square;
+}
+.l2{
+    list-style:none;
 }
 h1{
     text-align:center;
