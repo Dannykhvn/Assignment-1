@@ -15,9 +15,24 @@ aside{
 .l1{
     list-style:square;
 }
+.navi{
+    display:flex;
+    justify-content:flex-end;
+}
 .l2{
     list-style:none;
+    padding:10px;
+    color:navy;
 }
 h1{
     text-align:center;
+}
+#button1{
+    border-radius:10px;
+    cursor: pointer;
+    background-color:teal;
+    font-size: 16px;
+    color:white;
+    padding: 15px;
+    margin: 15px;
 }
