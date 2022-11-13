@@ -1,17 +1,34 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin:0%;
+    padding:0px;
+    border:0px;
 
+  }
 main{
     display:grid;
     grid-template-columns: 1fr 4fr;
+
 }
 aside{
-    background-color:antiquewhite;
+    background-color:#F9F3EC;
+    width:100%;
     height:100%;
+    color:#5394A0;
 
 }
 .better{
-    background-color:tan;
+    background-color:#ebe4db;
     height:100%;
+    width:100%;
+    color:#5394A0;
+    overflow: hidden;
+    position: relative;
+    margin: 0%;
+    padding:0px;
+    border:0px;
 }
+
 .l1{
     list-style:square;
 }
@@ -22,17 +39,66 @@ aside{
 .l2{
     list-style:none;
     padding:10px;
-    color:navy;
+    color:#5394A0;
 }
 h1{
     text-align:center;
 }
 #button1{
     border-radius:10px;
+    border-style:none;
     cursor: pointer;
-    background-color:teal;
+    background-color:#5394A0;
     font-size: 16px;
     color:white;
     padding: 15px;
     margin: 15px;
+}
+#button2{
+    border-radius:10px;
+    border-style:none;
+    cursor: pointer;
+    background-color:#6F6A87;
+    font-size: 16px;
+    color:white;
+    padding: 15px;
+    margin: 15px;
+    float: right;
+}
+#button3{
+    border-radius:10px;
+    border-style:none;
+    cursor: pointer;
+    background-color:#5394A0;
+    font-size: 16px;
+    color:white;
+    padding: 10px;
+    margin: 10px;
+    
+}
+#button4{
+    border-radius:10px;
+    border-style:none;
+    cursor: pointer;
+    background-color:#D9827C;
+    font-size: 16px;
+    color:white;
+    padding: 10px;
+    margin: 10px;
+    
+}
+.save-can{
+    display:flex;
+    justify-content:flex-end;
+}
+#myText{
+    margin:15px;
+    width:97%;
+    height:150px;
+    background-color:#F9F3EC;
+}
+@media screen and(max-width:500px){
+    .better{
+        width:50%;
+    }
 }
