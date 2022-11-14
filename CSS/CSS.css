@@ -93,7 +93,7 @@ h1{
 }
 #myText{
     margin:15px;
-    width:97%;
+    width:96%;
     height:150px;
     background-color:#F9F3EC;
     border-color:rgb(102, 155, 253);
@@ -107,8 +107,11 @@ img{
     width: 30px;
     height:30px;
 }
-@media screen and(max-width:500px){
+@media screen and (min-width:481px){
     .better{
-        width:50%;
+        width:auto;
+    }
+    #myText{
+        transition: all .5s linear;
     }
 }
