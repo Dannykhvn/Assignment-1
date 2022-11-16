@@ -91,26 +91,42 @@ h1{
     justify-content:flex-end;
 }
 #myText{
-    margin:15px;
-    width:96%;
+    margin-left:15px; 
+    width:95%;
+    resize: none;
     height:150px;
     background-color:#F9F3EC;
     border-color:rgb(102, 155, 253);
     border-width:4px;
-    resize:none;
-    transition: all .5s linear;
+    position:relative;
+    /* transition: all .5s linear; */
 }
 .bottom{
     text-align:center;
     margin-top:127.5px;
-    margin-bottom:127.5px;
+    margin-bottom:153px;
 }
 img{
     width: 35px;
     height:35px;
 }
-@media screen and (min-width:481px){
-    .better{
-        width:auto;
-    }
+@media only screen and (max-width: 600px){
+
+    #myText{
+        width: 92%;;
+        margin-left: 15px;
+
+        height: 100px;
+        padding-left: 5px;
+        }
+        .navi{
+            display:flex;
+            flex-direction: column;
+            align-items:center;            
+        }
+        .save-can{
+            display:flex;
+            justify-content:space-between;
+            align-items:stretch;
+        }
 }
