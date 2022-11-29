@@ -3,6 +3,7 @@ body {
     margin:0%;
     padding:0px;
     border:0px;
+    
   }
 main{
     display:grid;
@@ -41,50 +42,47 @@ aside{
 h1{
     text-align:center;
 }
-#button1{
+
+.buttons{
+    display: flex;
+    height: 10%;
+}
+
+.button{
     border-radius:10px;
     border-style:none;
     cursor: pointer;
-    background-color:#5394A0;
     font-size: 16px;
     color:white;
+    /* position:relative; */
+}
+.rightb{
+    display:flex;
+    justify-content:flex-end;
+    width:100%; 
+    
+}
+#button1{
+    width:130px;
+    background-color:#5394A0;
     padding: 15px;
     margin: 15px;
-    position:relative;
+
 }
 #button2{
-    border-radius:10px;
-    border-style:none;
-    cursor: pointer;
     background-color:#6F6A87;
-    font-size: 16px;
-    color:white;
     padding: 15px;
     margin: 15px;
-    float: right;
-    position:relative;
 }
 #button3{
-    border-radius:10px;
-    border-style:none;
-    cursor: pointer;
     background-color:#5394A0;
-    font-size: 16px;
-    color:white;
     padding: 10px;
     margin: 10px;
-    position:relative;
 }
 #button4{
-    border-radius:10px;
-    border-style:none;
-    cursor: pointer;
     background-color:#D9827C;
-    font-size: 16px;
-    color:white;
     padding: 10px;
     margin: 10px;
-    position:relative;
 }
 .save-can{
     display:flex;
