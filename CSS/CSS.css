@@ -3,13 +3,10 @@ body {
     margin:0%;
     padding:0px;
     border:0px;
-    
-  }
-main{
     display:grid;
     grid-template-columns: 1fr 4fr;
+  }
 
-}
 aside{
     background-color:#F9F4ED;
     width:100%;
