@@ -117,5 +117,19 @@ img{
             justify-content:space-between;
             align-items:stretch;
         }
-       
+        body{
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 2fr 15px 15px;
+        }
+        main{
+            grid-row:1/2;
+        }
+        aside{
+            background-color:   #F9F4ED;
+            grid-row:2/3;
+        }
+        footer{
+            grid-row:3/4;
+        }
 }
