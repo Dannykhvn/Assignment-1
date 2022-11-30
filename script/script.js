@@ -54,19 +54,20 @@ function darkmode(){
     cancelButton.classList.toggle("b4_theme");
 }
 function hide() {
-    cancelButton.classList.add("hideItems");
-    saveButton.classList.add("hideItems");
-    textBox.classList.add("hideItems");
+    cancelButton.classList.add("toggleItems");
+    saveButton.classList.add("toggleItems");
+    textBox.classList.add("toggleItems");
 }
 function show() {
-    cancelButton.classList.remove("hideItems");
-    saveButton.classList.remove("hideItems");
-    textBox.classList.remove("hideItems");
+    cancelButton.classList.remove("toggleItems");
+    saveButton.classList.remove("toggleItems");
+    textBox.classList.remove("toggleItems");
 }
 function clearTxt() {
     textBox.value = "";
 }
-let notesArray = [{title: "Note One", body: "This is my first note"}]
+let notesArray = [{title: "note one", body: "This is my first note"},
+                  {title: "note two", body: "This is my second note"}]
 function saveNote() {
     const noteTitle = prompt("Please enter a title...");
     const inputNote = document.querySelector(".myText");
@@ -85,5 +86,15 @@ function updatedNotes(note){
         const listItem = document.createElement("li");
         listItem.textContent = `${note.title}`;
         notelist.appendChild(listItem);
+}
+const noteClick = document.querySelector(".notes");
+noteClick.addEventListener("click", displayNote)
+function displayNote(event){
+    for(let printNote of notesArray){
+    if(event.target.textContent === printNote.title){
+        document.getElementById("textBox").value = printNote.body;
+        console.log(printNote.body);
+    }
+}
 }
 
