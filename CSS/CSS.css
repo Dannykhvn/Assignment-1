@@ -118,20 +118,25 @@ img{
             align-items:stretch;
         }
         body{
-            height:auto;
+            
+            background-color:#f1e9df;
             display:grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 2fr 100px 100px;
+            grid-template-rows: 1fr;
         }
         main{
-            grid-row:1/2;
+            position:static;
         }
         aside{
             background-color:   #F9F4ED;
             grid-row:2/3;
             height:fit-content;
+            position:relative;
+            bottom:340px;
         }
         footer{
-            grid-row:3/4;
+            position:relative;
+            top:100px;
         }
+        
 }
