@@ -10,6 +10,7 @@ function selectButton(event){
     if(event.target.textContent === "New Note")
     {
         show();
+        clearTxt();
     }
     else if(event.target.textContent === "Dark Theme")
     {
