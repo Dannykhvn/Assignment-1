@@ -24,7 +24,7 @@ function selectButton(event){
     }
     else if(event.target.textContent === "Save")
     {
-        
+        saveNote();
     }
     else if(event.target.textContent === "Cancel")
     {
@@ -65,5 +65,22 @@ function show() {
 }
 function clearTxt() {
     textBox.value = "";
+}
+let notesArray = [{title: "Note One", body: "This is my first note"}]
+function saveNote() {
+    const noteTitle = prompt("Please enter a title...");
+    const inputNote = document.querySelector(".myText");
+    let note ={
+        title : noteTitle.value,
+        body : inputNote.value,
+    }
+noteTitle.value = "";
+inputNote.value = "";
+updatedNotes(note);
+notesArray.push(note);
+console.log(notesArray);
+}
+function updatedNotes(note){
+    const listItem = document.createElement("li");
 }
 
