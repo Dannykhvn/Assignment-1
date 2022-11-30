@@ -56,24 +56,24 @@ h1{
     width:100%; 
     
 }
-#button1{
+.button1{
     width:130px;
     background-color:#5394A0;
     padding: 15px;
     margin: 15px;
 
 }
-#button2{
+.button2{
     background-color:#6F6A87;
     padding: 15px;
     margin: 15px;
 }
-#button3{
+.button3{
     background-color:#5394A0;
     padding: 10px;
     margin: 10px;
 }
-#button4{
+.button4{
     background-color:#D9827C;
     padding: 10px;
     margin: 10px;
@@ -82,7 +82,7 @@ h1{
     display:flex;
     justify-content:flex-end;
 }
-#myText{
+.myText{
     margin-left:15px; 
     width:95%;
     resize: none;
@@ -101,7 +101,7 @@ img{
     height:35px;
 }
 @media only screen and (max-width: 600px){
-        #myText{
+        .myText{
             width: 92%;;
             margin-left: 15px;
             height: 100px;
@@ -140,11 +140,27 @@ img{
         }
         
 }
-.bg-color{
-    background-color:rgb(59, 7, 59);
-    color:white;
+.aside_theme{
+    background-color:#3A373D;
+    color:#9c908f;
 }
-.dark{
-    background-color:purple;
-    color:white;
+.main_theme{
+    background-color:#302E33;
+    color:#9c908f;
+}
+.b1_theme{
+    background-color:#413d28;
+}
+.b2_theme{
+    background-color:#896f74;
+}
+.text_theme{
+    background-color:#3A373D;
+    border-color:#41728D;
+}
+.b3_theme{
+    background-color:#413d28;
+}
+.b4_theme{
+    background-color:#4F363F;
 }

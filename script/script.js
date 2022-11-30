@@ -1,7 +1,11 @@
 document.body.addEventListener("click", selectButton);
-const darkButton = document.getElementById("button2");
-const bgmain = document.querySelector(".better");
 const bgaside = document.querySelector("aside");
+const bgmain = document.querySelector(".better");
+const newButton = document.querySelector(".button1");
+const darkButton = document.querySelector(".button2");
+const saveButton = document.querySelector(".button3");
+const cancelButton = document.querySelector(".button4");
+const textBox = document.querySelector(".myText");
 function selectButton(event){
     if(event.target.textContent === "New Note")
     {
@@ -40,8 +44,13 @@ function changeClick(){
     }
 }
 function darkmode(){
-    bgmain.classList.toggle("bg-color");
-    darkButton.classList.toggle("dark");
-    bgaside.classList.toggle("dark");
+    bgaside.classList.toggle("aside_theme");
+    bgmain.classList.toggle("main_theme");
+    newButton.classList.toggle("b1_theme");
+    darkButton.classList.toggle("b2_theme");
+    textBox.classList.toggle("text_theme");
+    saveButton.classList.toggle("b3_theme");
+    cancelButton.classList.toggle("b4_theme");
+    
 }
 
