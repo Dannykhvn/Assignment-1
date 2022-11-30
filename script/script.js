@@ -9,7 +9,7 @@ const textBox = document.querySelector(".myText");
 function selectButton(event){
     if(event.target.textContent === "New Note")
     {
-        console.log("a")
+        show();
     }
     else if(event.target.textContent === "Dark Theme")
     {
@@ -23,11 +23,11 @@ function selectButton(event){
     }
     else if(event.target.textContent === "Save")
     {
-        console.log("b")
+        
     }
     else if(event.target.textContent === "Cancel")
     {
-        console.log("c")
+        hide();
     }
 }
 
@@ -51,6 +51,18 @@ function darkmode(){
     textBox.classList.toggle("text_theme");
     saveButton.classList.toggle("b3_theme");
     cancelButton.classList.toggle("b4_theme");
-    
+}
+function hide() {
+    cancelButton.classList.add("hideItems");
+    saveButton.classList.add("hideItems");
+    textBox.classList.add("hideItems");
+}
+function show() {
+    cancelButton.classList.remove("hideItems");
+    saveButton.classList.remove("hideItems");
+    textBox.classList.remove("hideItems");
+}
+function clearTxt() {
+    textBox.value = "";
 }
 

@@ -88,7 +88,7 @@ h1{
     resize: none;
     height:150px;
     background-color:#F9F3EC;
-    border-color:rgb(102, 155, 253);
+    border-color:rgb(136, 176, 252);
     border-width:4px;
 }
 .bottom{
@@ -163,4 +163,7 @@ img{
 }
 .b4_theme{
     background-color:#4F363F;
+}
+.hideItems{
+    display:none;
 }
