@@ -71,7 +71,7 @@ function saveNote() {
     const noteTitle = prompt("Please enter a title...");
     const inputNote = document.querySelector(".myText");
     let note ={
-        title : noteTitle.value,
+        title : noteTitle,
         body : inputNote.value,
     }
 noteTitle.value = "";
@@ -81,6 +81,9 @@ notesArray.push(note);
 console.log(notesArray);
 }
 function updatedNotes(note){
-    const listItem = document.createElement("li");
+    const notelist = document.querySelector(".notes");
+        const listItem = document.createElement("li");
+        listItem.textContent = `${note.title}`;
+        notelist.appendChild(listItem);
 }
 
