@@ -3,18 +3,15 @@ body {
     margin:0%;
     padding:0px;
     border:0px;
-  }
-main{
     display:grid;
     grid-template-columns: 1fr 4fr;
+  }
 
-}
 aside{
     background-color:#F9F4ED;
     width:100%;
     height:100%;
     color:#41728D;
-    position:relative;
 }
 .better{
     background-color:#f1e9df;
@@ -22,7 +19,6 @@ aside{
     width:100%;
     color:#41728D;
     overflow: hidden;
-    position: relative;
     margin: 0%;
     padding:0px;
     border:0px;
@@ -41,65 +37,60 @@ aside{
 h1{
     text-align:center;
 }
-#button1{
-    border-radius:10px;
+
+.buttons{
+    display: flex;
+    height: 10%;
+}
+
+.button{
     border-style:none;
+    border-radius:10px;
     cursor: pointer;
-    background-color:#5394A0;
     font-size: 16px;
     color:white;
+}
+.rightb{
+    display:flex;
+    justify-content:flex-end;
+    width:100%; 
+    
+}
+.button1{
+    width:130px;
+    background-color:#5394A0;
     padding: 15px;
     margin: 15px;
-    position:relative;
+
 }
-#button2{
-    border-radius:10px;
-    border-style:none;
-    cursor: pointer;
+.button2{
     background-color:#6F6A87;
-    font-size: 16px;
-    color:white;
     padding: 15px;
     margin: 15px;
-    float: right;
-    position:relative;
 }
-#button3{
-    border-radius:10px;
-    border-style:none;
-    cursor: pointer;
+.button3{
     background-color:#5394A0;
-    font-size: 16px;
-    color:white;
     padding: 10px;
     margin: 10px;
-    position:relative;
 }
-#button4{
-    border-radius:10px;
-    border-style:none;
-    cursor: pointer;
+.button4{
     background-color:#D9827C;
-    font-size: 16px;
-    color:white;
     padding: 10px;
     margin: 10px;
-    position:relative;
 }
 .save-can{
     display:flex;
     justify-content:flex-end;
 }
-#myText{
+.myText{
     margin-left:15px; 
     width:95%;
     resize: none;
     height:150px;
     background-color:#F9F3EC;
-    border-color:rgb(102, 155, 253);
+    color:#41728D;
+    border-color:rgb(136, 176, 252);
     border-width:4px;
-    position:relative;
-    /* transition: all .5s linear; */
 }
 .bottom{
     text-align:center;
@@ -111,13 +102,11 @@ img{
     height:35px;
 }
 @media only screen and (max-width: 600px){
-
-    #myText{
-        width: 92%;;
-        margin-left: 15px;
-
-        height: 100px;
-        padding-left: 5px;
+        .myText{
+            width: 92%;;
+            margin-left: 15px;
+            height: 100px;
+            padding-left: 5px;
         }
         .navi{
             display:flex;
@@ -129,4 +118,57 @@ img{
             justify-content:space-between;
             align-items:stretch;
         }
+        body{
+            
+            background-color:#f1e9df;
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+        main{
+            position:static;
+        }
+        aside{
+            background-color:   #F9F4ED;
+            grid-row:2/3;
+            height:fit-content;
+            position:relative;
+            bottom:340px;
+        }
+        footer{
+            position:relative;
+            top:100px;
+        }
+        
+}
+.aside_theme{
+    background-color:#3A373D;
+    color:#9c908f;
+}
+.main_theme{
+    background-color:#302E33;
+    color:#9c908f;
+}
+.b1_theme{
+    background-color:#413d28;
+}
+.b2_theme{
+    background-color:#896f74;
+}
+.text_theme{
+    background-color:#3A373D;
+    border-color:#41728D;
+    color:#9c908f;
+}
+.b3_theme{
+    background-color:#413d28;
+}
+.b4_theme{
+    background-color:#4F363F;
+}
+.toggleItems{
+    display:none;
+}
+.square{
+    list-style:square;
 }

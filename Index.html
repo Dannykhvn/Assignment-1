@@ -7,17 +7,18 @@
     <link href="css/css.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <title>Document</title>
+    <script defer src="script/script.js"></script>
   </head>
   <body>
-    <main>
       <aside>
         <h1>My Notes</h1>
-        <ul class="notes">
-          <li class="l1">note one</li>
+        <ul id="notes_id"class="notes">
+          <li class="l1 itemlist">note one</li>
           <li class="l1">note two</li>
         </ul>
       </aside>
       <div class="better">
+        <header>
         <h1>Take Better Notes</h1>
         <nav>
           <ul class="navi">
@@ -25,22 +26,28 @@
             <li class="l2">Docs</li>
           </ul>
         </nav>
-        <button id="button1">New Note</button>
-        <button id="button2">Dark Theme</button>
+        </header>
+        <main>
+        <div class="buttons">
+        <button class="button button1">New Note</button>
+          <div class="rightb">
+            <button class="button button2">Dark Theme</button>
+          </div>
+        </div>
         <br>
-        <textarea id="myText" placeholder="Please enter a new note..." rows="5" cols="33"></textarea>
+        <textarea id="textBox" class="myText" rows="5" cols="33">Please enter a new note...</textarea>
         <br>
         <div class="save-can">
-          <button id="button3">Save</button>
-          <button id="button4">Cancel</button>
+          <button class="button button3">Save</button>
+          <button class="button button4">Cancel</button>
         </div>
-
+      </main>
         <footer class="bottom">
           <p><b>Keep in Touch</b></p>
           <a href="https://www.linkedin.com/home?originalSubdomain=ca"><img src="pictures/linkedin_circle_color-512.webp" alt="Linked in"></a>
           <a href="https://theuselessweb.com/"><img src="pictures/Internet_Line-02-512.webp" alt="Internet Line"></a>
         </footer>
       </div>
-    </main>
+    
   </body>
 </html>
