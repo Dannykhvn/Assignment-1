@@ -1,7 +1,7 @@
-// document.body.addEventListener("click", changeClick);
 document.body.addEventListener("click", selectButton);
-const darkMode = document.querySelector("#button2");
+const darkButton = document.getElementById("button2");
 const bgmain = document.querySelector(".better");
+const bgaside = document.querySelector("aside");
 function selectButton(event){
     if(event.target.textContent === "New Note")
     {
@@ -9,8 +9,13 @@ function selectButton(event){
     }
     else if(event.target.textContent === "Dark Theme")
     {
-        darkmode()
-        event.target.textContent = "Light Theme"
+        changeClick();
+        darkmode();
+    }
+    else if(event.target.textContent === "Light Theme")
+    {
+        changeClick();
+        darkmode();
     }
     else if(event.target.textContent === "Save")
     {
@@ -23,18 +28,20 @@ function selectButton(event){
 }
 
 function changeClick(){
-    
-    if (darkMode.textContent === "Dark Theme")
+    const firstText = "Dark Theme"
+    if (darkButton.textContent === "Dark Theme")
     {
         
-        darkMode.textContent = "Light Theme"
+        darkButton.textContent = "Light Theme"
     }
     else{
-        darkMode.textContent = firstText;
+        darkButton.textContent = firstText;
         
     }
 }
 function darkmode(){
     bgmain.classList.toggle("bg-color");
+    darkButton.classList.toggle("dark");
+    bgaside.classList.toggle("dark");
 }
 
