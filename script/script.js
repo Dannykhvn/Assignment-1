@@ -86,14 +86,15 @@ function updatedNotes(note){
         const listItem = document.createElement("li");
         listItem.textContent = `${note.title}`;
         notelist.appendChild(listItem);
+        listItem.classList.add("square");
 }
 const noteClick = document.querySelector(".notes");
-noteClick.addEventListener("click", displayNote)
+noteClick.addEventListener("click", displayNote);
 function displayNote(event){
     for(let printNote of notesArray){
-    if(event.target.textContent === printNote.title){
-        document.getElementById("textBox").value = printNote.body;
-        console.log(printNote.body);
+        if(event.target.textContent === printNote.title){
+            document.getElementById("textBox").value = printNote.body;
+            console.log(printNote.body);
     }
 }
 }

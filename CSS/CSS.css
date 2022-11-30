@@ -169,3 +169,6 @@ img{
 .toggleItems{
     display:none;
 }
+.square{
+    list-style:square;
+}
